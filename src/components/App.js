@@ -57,9 +57,7 @@ class App extends Component {
 							<span className="flex flex-row justify-between items-center font-bold text-red-400">
 								<span> Someone just shared a link</span>
 								<span className="flex text-xs font-bold text-gray-500 ">
-									{moment(item.created_at).format(
-										"YYYY-MM-DD, hh:mm:ss A"
-									)}
+									{moment(item.created_at).calendar()}
 								</span>
 							</span>
 							<span className="text-xs text-blue-600 pl-3 mt-1">
